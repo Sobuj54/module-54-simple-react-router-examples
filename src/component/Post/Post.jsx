@@ -13,7 +13,8 @@ const Post = ({post}) => {
             <h2>id: {id}</h2>
             <h3>Title : {title}</h3>
             <Link to={`/post/${id}`}>show details</Link>
-            <button>Show post details</button>
+            <Link to={`/post/${id}`}><button>Show post details</button></Link>
+            
         </div>
     );
 };
