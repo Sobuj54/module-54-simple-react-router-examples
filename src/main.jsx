@@ -48,7 +48,8 @@ const router = createBrowserRouter([
       {
         // this way we can take dynamic friend id
         path: 'friend/:friendId',
-        element: <FriendDetail></FriendDetail>
+        element: <FriendDetail></FriendDetail>,
+        loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.friendId}`)
       },
       {
         path : 'contact',
