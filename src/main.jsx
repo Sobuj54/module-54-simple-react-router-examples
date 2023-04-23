@@ -12,6 +12,7 @@ import ErrorPage from './component/Error/ErrorPage.jsx';
 import Home from './component/Home/Home.jsx';
 import First from './component/First/First.jsx';
 import Friends from './component/Friends/Friends.jsx';
+import FriendDetail from './component/FriendDetail/FriendDetail.jsx';
 
 // const router = createBrowserRouter([
 //   {
@@ -43,6 +44,11 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About></About>
+      },
+      {
+        // this way we can take dynamic friend id
+        path: 'friend/:friendId',
+        element: <FriendDetail></FriendDetail>
       },
       {
         path : 'contact',
