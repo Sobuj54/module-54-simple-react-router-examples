@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, useNavigation } from "react-router-dom";
+import { Link, Outlet, useNavigation } from "react-router-dom";
 import Header from "../Header/Header";
 
 const Home = () => {
@@ -8,6 +8,7 @@ const Home = () => {
     <div>
       <Header></Header>
       <div>{navigation.state === "loading" ? "loading" : ""}</div>
+
       <Outlet />
     </div>
   );
