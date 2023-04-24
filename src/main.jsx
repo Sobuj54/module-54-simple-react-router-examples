@@ -12,6 +12,7 @@ import Friends from "./component/Friends/Friends.jsx";
 import FriendDetail from "./component/FriendDetail/FriendDetail.jsx";
 import Posts from "./component/Posts/Posts.jsx";
 import PostDetail from "./component/PostDetail/PostDetail.jsx";
+import Error from "./component/ThrowError/Error.jsx";
 
 // const router = createBrowserRouter([
 //   {
@@ -75,7 +76,7 @@ const router = createBrowserRouter([
       },
       {
         path: "*",
-        element: <div>404 page not found</div>,
+        element: <Error></Error>,
       },
     ],
   },
